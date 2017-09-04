@@ -1,0 +1,51 @@
+.s1 {
+	font-size: 25px;
+	display: inline-block;
+	color: #A1A1A1;
+}
+
+.s2 {
+	font-size: 15px;
+	display: inline-block;
+	color: #95A2C0;
+}
+
+img,
+.s1,
+.s2 {
+	vertical-align: middle;
+}
+
+.first {
+	text-align: center;
+}
+
+.btn1 {
+	background-image: url(../image/1.png);
+	width: 120px;
+	height: 30px;
+	font-weight: bolder;
+}
+
+.second {
+	position: absolute;
+	right: 226px;
+	top: 300px;
+	width: 280px;
+	height: 380px;	
+	background: white;
+	text-align: center;
+}
+.uname,.pwd{
+	height: 30px;
+	width: 230;
+}
+.sc{
+	height: 30px;
+	width: 80px;
+}
+
+section {
+	margin-left: 130px;
+	
+}

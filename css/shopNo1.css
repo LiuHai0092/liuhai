@@ -1,0 +1,181 @@
+head{
+	position: relative;
+}
+#hFather{	
+	position: relative;
+	height: 50px;
+	
+}
+
+.hFirst {
+	position:absolute;
+	left: 20px;
+	top: 0px;
+}
+
+.hSecond {
+	display: inline;
+	position: absolute;
+	top: 20px;
+	right: 130px;
+}
+
+.hThird {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+
+.hFour {
+	position: absolute;
+}
+
+.hhUl {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.hFive {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+}
+section{
+	position: relative;
+	border-top-style: solid;
+	border-top-color: #E1E1E1;
+	margin: 50px;
+}
+#fSection {
+	position: relative;
+	top:50px
+	
+	
+}
+.sFirst{
+	display: inline;
+	position: relative;
+	top: 50px;
+	left: 80px;
+}
+.sSecond{
+	position: absolute;
+	top:50px;
+	right:100px;
+	
+	
+}
+.sThird,.sfFour{
+	position: absolute;
+	right: 10px;
+}
+.sFour{
+	position: relative;
+	
+}
+.sfFirst,.sfSecond{
+	position: relative;
+	border-style: solid;
+	height: 50px;
+	margin: 10px;
+}
+.uid{
+	position: relative;
+	top:10px;
+	border: 0;
+}
+.uid1{
+	position: relative;
+	top:15px;
+}
+.pwd{
+	position: relative;
+	top:0px;
+	left: -10px;
+	border: 0;
+}
+.pwd1{
+	position: relative;
+	top:10px;
+}
+.sfFive{
+	position: relative;
+	margin: 10px 0px 10px 0px;
+}
+.sFive{
+	position: relative;
+	border-style: solid;
+	
+	margin: 10px;
+}
+#fFooter{
+	position: relative;
+	margin-top: 100px;
+	
+}
+.ffFirst {
+	text-align: center;
+}
+
+.ffSecond {
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+}
+.title{
+	font-size: 12px;
+}
+#sSection{
+	position: relative;
+	
+}
+.rgtFirst{
+	position:relative;
+	top: 10px;
+	left:37%;	
+}
+.rgtfFirst,.rgtfSecond{
+	display: block;
+	border-style: solid;
+	height: 50px;
+	width: 300px;
+	margin: 10px;
+}
+
+.rgtfThird1{
+	position: relative;
+	top:-14px;
+	border-style: solid;
+	height: 50px;
+	width: 150px;
+	margin: 10px;
+}
+.rgtfThird2{
+	position: relative;
+	top: 8px;
+	left: -5px;
+}
+.rgtfFour,.rgtfFive{
+	position: relative;
+	display: block;
+	border-style: solid;
+	height: 50px;
+	width: 300px;
+	margin: 10px;
+	top: -25px;
+}
+.rgtfThird{
+	position: relative;
+	display: block;	
+	margin: 10px;
+	top: -25px;
+}
+.rgtfSix{
+	position: relative;
+	left:8px;
+	top:-20px
+}
+

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>分类页面</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#body-left {
+				width: 22%;
+				border: 1px solid red;
+				display: inline-block;
+				
+			}
+			
+			#body-left div {
+				border: 1px solid red;
+				display: inline-block;
+				margin-bottom: 2px;
+			}
+			
+			h2 {
+				background-color: black;
+				color: white;
+				height: 30px;
+				line-height: 30px;
+				font-size: 15px;
+				padding-left: 20px;
+			}
+			
+			dl {
+				padding: 10px 20px;
+				border-bottom: 1px dashed bisque;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			dd {
+				padding: 3px;
+				font-size: 13px;
+			}
+			
+			.like1 {
+				background-color: fuchsia;
+			}
+			
+			ul {
+				list-style-type: none;
+			}
+			
+			li {
+				padding: 3px;
+				font-size: 13px;
+				border-bottom: 1px dashed violet;
+			}
+			
+			li span {
+				background-color: darkslategray;
+				padding: 0 2px;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				line-height: 20px;
+				text-align: center;
+			}
+			
+			li:hover {
+				background-color: yellow;
+			}
+			
+			#body-right {
+				width: 70%;
+				border: 1px solid red;
+				display: inline-block;
+				float: right;
+				clear: both;
+				position: relative;
+				right: 100px;
+			}
+			
+			.body-right {
+				text-align: center;
+				
+			}
+			
+			.body-right img {
+				/*display: inline-block;*/
+				width: 30px;
+				height: 30px;
+				vertical-align: middle;
+				
+			}
+			
+			.tu {
+				position: relative;
+				border: 1px solid blue;
+				display: inline-block;
+				
+			}
+			
+			.like {
+				background-color: orangered;
+				width: 250px;
+				height: 40px;
+				position:absolute;
+				bottom:0px;
+				right:1px;
+				text-align: center;
+				box-sizing: border-box;	
+				
+				font-size: 15px;
+				display: none;		
+			}
+			.tu:hover .like{
+				display: block;
+			}
+			.tut{
+				padding: 0;
+			}
+			.tut dd {
+				font-size: 5px;
+				
+			}
+			dt img{
+				border: 1px solid darkcyan;
+			}
+			#body-dao{
+				display: inline-block;
+				position: fixed;
+				right: 10px;
+				bottom: 30px;
+				color: rgba(255,255,255,0);
+			}
+			ol{
+				list-style: none;
+				text-align: center;
+			}
+			ol li{
+				border: 1px solid black;
+				width: 35px;
+				height: 35px;
+				vertical-align: middle;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="body-left">
+			<div>
+				<h2>全部分类</h2>
+				<dl>
+					<dt>护肤</dt>
+					<dd>
+						<a href="">洁面&nbsp;&nbsp;</a>
+						<a href="">化妆水&nbsp;&nbsp;</a>
+						<a href="">喷雾&nbsp;&nbsp;</a>
+						<a href="">美容液&nbsp;&nbsp;</a>
+						<a href="">眼霜</a>
+					</dd>
+					<dd>
+						<a href="">眼部精华&nbsp;&nbsp;</a>
+						<a href="">眼膜&nbsp;&nbsp;</a>
+						<a href="">面膜&nbsp;&nbsp;</a>
+						<a href="">面膜贴</a>
+					</dd>
+					<dd>
+						<a href="">水洗面膜&nbsp;&nbsp;</a>
+						<a href="">免洗面膜&nbsp;&nbsp;</a>
+						<a href="">精华&nbsp;&nbsp;</a>
+						<a href="">精油</a>
+					</dd>
+					<dd>
+						<a href="">凝露&nbsp;&nbsp;</a>
+						<a href="">乳液&nbsp;&nbsp;</a>
+						<a href="">面霜&nbsp;&nbsp;</a>
+						<a href="">日霜&nbsp;&nbsp;</a>
+						<a href="">晚霜</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>彩妆</dt>
+					<dd>
+						<a href="">卸妆&nbsp;&nbsp;</a>
+						<a href="">防晒&nbsp;&nbsp;</a>
+						<a href="">隔离&nbsp;&nbsp;</a>
+						<a href="">BB霜&nbsp;&nbsp;</a>
+						<a href="">粉底&nbsp;&nbsp;</a>
+						<a href="">粉饼</a>
+					</dd>
+					<dd>
+						<a href="">睫毛膏&nbsp;&nbsp;</a>
+						<a href="">眼影&nbsp;&nbsp;</a>
+						<a href="">唇彩&nbsp;&nbsp;</a>
+						<a href="">腮红&nbsp;&nbsp;</a>
+						<a href="">眼线笔</a>
+					</dd>
+					<dd>
+						<a href="">底妆&nbsp;&nbsp;</a>
+						<a href="">遮瑕&nbsp;&nbsp;</a>
+						<a href="">蜜粉&nbsp;&nbsp;</a>
+						<a href="">眉笔&nbsp;&nbsp;</a>
+						<a href="">美甲</a>
+					</dd>
+				</dl>
+
+			</div>
+			<div>
+				<h2 class="like1">大家都喜欢买的美容品</h2>
+				<ul>
+					<li><span>1</span>
+						<a href="">雅诗兰黛即时修护眼部精华霜&nbsp;15ml</a>
+					</li>
+					<li><span>2</span>
+						<a href="">伊丽莎白雅顿显效复合活肤霜 &nbsp;75ml</a>
+					</li>
+					<li><span>3</span>
+						<a href="">OLAY玉兰油多效修护霜&nbsp;50g</a>
+					</li>
+					<li><span>4</span>
+						<a href="">巨型一号丝瓜水&nbsp;320ML</a>
+					</li>
+					<li><span>5</span>
+						<a href="">倩碧保湿洁肤水2号&nbsp;200ml</a>
+					</li>
+					<li><span>6</span>
+						<a href="">比度克细肤淡印霜&nbsp;30g</a>
+					</li>
+					<li><span>7</span>
+						<a href="">兰芝 (LANEIGE)夜间修护锁水面膜 &nbsp;80ml</a>
+					</li>
+					<li><span>8</span>
+						<a href="">SK-II护肤精华露 &nbsp;215ml</a>
+					</li>
+					<li><span>9</span>
+						<a href="">欧莱雅青春密码活颜精华肌底液</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body-right">
+			<div class="body-right">
+				————&nbsp;<img src="http://pic.58pic.com/58pic/11/40/27/67658PICGZP.jpg" />猜你喜欢&nbsp;&nbsp;————
+				<p>实时推荐最适合你的宝贝</p>
+			</div>
+			<div class="tu">
+				
+					<dl class="tut">
+					<dt><img src="https://img.alicdn.com/bao/uploaded/i3/TB1H_7fQVXXXXaiXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+</dt>
+					<dd>九分裤男士休闲裤夏季韩版潮流薄款宽松 9分小脚运动哈伦裤男裤子</dd>
+					<dd>&nbsp;HOT&nbsp;￥9999销量250</dd>
+				</dl>
+							
+				<div class="like">
+					<p>
+						<a href="">找相似</a>
+					</p>
+					<p>
+						<a href="">发现更多相似宝贝</a>
+					</p>
+				</div>
+			</div>
+			<div class="tu">
+				<dl class="tut">
+					<dt><img src="https://img.alicdn.com/bao/uploaded/i3/TB1H_7fQVXXXXaiXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+</dt>
+					<dd>九分裤男士休闲裤夏季韩版潮流薄款宽松 9分小脚运动哈伦裤男裤子</dd>
+					<dd>&nbsp;HOT&nbsp;￥9999销量250</dd>
+				</dl>
+				<div class="like">
+					<p>
+						<a href="">找相似</a>
+					</p>
+					<p>
+						<a href="">发现更多相似宝贝</a>
+					</p>
+				</div>
+			</div>
+			<div class="tu">
+				<dl class="tut">
+					<dt><img src="https://img.alicdn.com/bao/uploaded/i3/TB1H_7fQVXXXXaiXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+</dt>
+					<dd>九分裤男士休闲裤夏季韩版潮流薄款宽松 9分小脚运动哈伦裤男裤子</dd>
+					<dd>&nbsp;HOT&nbsp;￥9999销量250</dd>
+				</dl>
+				<div class="like">
+					<p>
+						<a href="">找相似</a>
+					</p>
+					<p>
+						<a href="">发现更多相似宝贝</a>
+					</p>
+				</div>
+			</div>
+			<div class="tu">
+				<dl class="tut">
+					<dt><img src="https://img.alicdn.com/bao/uploaded/i3/TB1H_7fQVXXXXaiXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+</dt>
+					<dd>九分裤男士休闲裤夏季韩版潮流薄款宽松 9分小脚运动哈伦裤男裤子</dd>
+					<dd>&nbsp;HOT&nbsp;￥9999销量250</dd>
+				</dl>
+				<div class="like">
+					<p>
+						<a href="">找相似</a>
+					</p>
+					<p>
+						<a href="">发现更多相似宝贝</a>
+					</p>
+				</div>
+			</div>
+			<div class="tu">
+				<dl class="tut">
+					<dt><img src="https://img.alicdn.com/bao/uploaded/i3/TB1H_7fQVXXXXaiXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+</dt>
+					<dd>九分裤男士休闲裤夏季韩版潮流薄款宽松 9分小脚运动哈伦裤男裤子</dd>
+					<dd>&nbsp;HOT&nbsp;￥9999销量250</dd>
+				</dl>
+				<div class="like">
+					<p>
+						<a href="">找相似</a>
+					</p>
+					<p>
+						<a href="">发现更多相似宝贝</a>
+					</p>
+				</div>
+			</div>
+			<div class="tu">
+				<dl class="tut">
+					<dt><img src="https://img.alicdn.com/bao/uploaded/i3/TB1H_7fQVXXXXaiXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+</dt>
+					<dd>九分裤男士休闲裤夏季韩版潮流薄款宽松 9分小脚运动哈伦裤男裤子</dd>
+					<dd>&nbsp;HOT&nbsp;￥9999销量250</dd>
+				</dl>
+				<div class="like">
+					<p>
+						<a href="">找相似</a>
+					</p>
+					<p>
+						<a href="">发现更多相似宝贝</a>
+					</p>
+				</div>
+			</div>
+			<div class="tu">
+				<dl class="tut">
+					<dt><img src="https://img.alicdn.com/bao/uploaded/i3/TB1H_7fQVXXXXaiXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+</dt>
+					<dd>九分裤男士休闲裤夏季韩版潮流薄款宽松 9分小脚运动哈伦裤男裤子</dd>
+					<dd>&nbsp;HOT&nbsp;￥9999销量250</dd>
+				</dl>
+				<div class="like">
+					<p>
+						<a href="">找相似</a>
+					</p>
+					<p>
+						<a href="">发现更多相似宝贝</a>
+					</p>
+				</div>
+			</div>
+			<div class="tu">
+				<dl class="tut">
+					<dt><img src="https://img.alicdn.com/bao/uploaded/i3/TB1H_7fQVXXXXaiXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+</dt>
+					<dd>九分裤男士休闲裤夏季韩版潮流薄款宽松 9分小脚运动哈伦裤男裤子</dd>
+					<dd>&nbsp;HOT&nbsp;￥9999销量250</dd>
+				</dl>
+				<div class="like">
+					<p>
+						<a href="">找相似</a>
+					</p>
+					<p>
+						<a href="">发现更多相似宝贝</a>
+					</p>
+				</div>
+			</div>
+			<div class="tu">
+				<dl class="tut">
+					<dt><img src="https://img.alicdn.com/bao/uploaded/i3/TB1H_7fQVXXXXaiXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+</dt>
+					<dd>九分裤男士休闲裤夏季韩版潮流薄款宽松 9分小脚运动哈伦裤男裤子</dd>
+					<dd>&nbsp;HOT&nbsp;￥9999销量250</dd>
+				</dl>
+				<div class="like">
+					<p>
+						<a href="">找相似</a>
+					</p>
+					<p>
+						<a href="">发现更多相似宝贝</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="body-dao">
+			<ol>
+				<li class="1"><a href="">我常逛得</a></li>
+				<li class="2"><a href="">时尚</a></li>
+				<li class="3"><a href="">品质</a></li>
+				<li class="4"><a href="">特色</a></li>
+				<li class="5"><a href="">实惠</a></li>
+				<li class="6"><a href="">猜你喜欢</a></li>
+				<li class="7"><a href="">回到顶部</a></li>			
+			</ol>			
+		</div>
+	</body>
+
+</html>
